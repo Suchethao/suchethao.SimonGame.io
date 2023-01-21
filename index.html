@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  </head>
+<body>
+ <main class="game">
+  <header>
+    <h1 class="heading js-heading">Simon Says Simpsons</h1>
+  </header>
+<!-- use hex colors; -->
+
+  <section class="tile-container js-container unclickable">
+    <div class="tile tile-barney" data-tile="barney"></div>
+    <div class="tile tile-burns" data-tile="burns"></div>
+    <div class="tile tile-homer" data-tile="homer"></div>
+    <div class="tile tile-bart" data-tile="bart"></div>
+  </section>
+
+  <footer class="info-section">
+    <button class="start-button js-start">Start</button>
+    <span class="info js-info hidden"></span>
+  </footer>
+</main>
+<!-- Add sound effects in here -->
+<div class="hidden">
+    <audio
+      src="https://www.thesoundarchive.com/simpsons/barney/belching.mp3"
+      data-sound="barney"
+    ></audio>
+    <audio
+      src="https://www.thesoundarchive.com/simpsons/burns/Mr-Burns-pish-posh.mp3"
+      data-sound="burns"
+    ></audio>
+    <audio
+      src="https://www.thesoundarchive.com/simpsons/homer/boring.mp3"
+      data-sound="homer"
+    ></audio>
+    <audio
+      src="https://www.thesoundarchive.com/simpsons/bart/bartlaf3.mp3"
+      data-sound="bart"
+    ></audio>
+    <audio
+    src="https://www.thesoundarchive.com/simpsons/misc/haha.mp3"
+    data-sound="loser"
+    ></audio>
+  </div>
+  <script src="gameLogic.js"></script>
+  </body>
